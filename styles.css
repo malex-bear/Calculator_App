@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2E294E;
+}
+
+.calculator {
+    background: #F9F2F1;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    position: relative; /* Position the clouds relative to this container */
+    overflow: hidden; /* Ensure clouds don't go beyond the calculator's borders */
+    z-index: 1;
+}
+
+
+.calculator::before,
+.calculator::after{
+    content: ''; /* Ensures pseudo-elements are rendered */
+    position: absolute;
+    width: 600px;
+    height: 260px;
+    border-radius: 50%; 
+    z-index: -2;
+    filter: blur(30px);
+}
+
+
+.calculator::before {
+    background: #6a6490; 
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+.calculator::after {
+    background: #bab4de; 
+    bottom: 30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+
+.display {
+    width: 260px;
+    height: 60px;
+    background: #F9F2F1;
+    color: #A5B5BF;
+    font-size: 3rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    background: #ddd;
+    border: none;
+    border-radius: 80px;
+    font-size: 1.2rem;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #bbb;
+}
+
+.equals {
+    background: #2E294E;
+    color: #fff;
+}
+
+.equals:hover {
+    background: #52469f;
+}
