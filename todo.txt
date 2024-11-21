@@ -1,0 +1,5 @@
+IDEIAS:
+- light, dark and cute mode
+- turn phone friendly
+- scientific calculator
+- view history
