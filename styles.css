@@ -8,6 +8,30 @@ body {
     background-color: #2E294E;
 }
 
+.toolclick{
+    position: absolute; 
+    top: 50%; 
+    left: 0; /* Stick to the left side */
+    transform: translateY(-50%); /* Center the div vertically */
+    width: 30px;
+    height: 100vh;
+    border-radius: 5px;
+    background-color: #F9F2F1; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.toolclick > .top-symbol {
+    position: absolute; /* Place it at the top of the div */
+    top: 0; 
+    left: 50%; /* Move it to the center of the div */
+    transform: translateX(-50%); 
+    font-size: 20px; 
+    font-weight: bold; 
+    color:#2E294E;
+    cursor: pointer;
+}
+
 .calculator {
     background: #F9F2F1;
     padding: 60px;
@@ -53,7 +77,7 @@ body {
     height: 60px;
     background: #F9F2F1;
     color: #A5B5BF;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: right;
     padding: 10px;
     border-radius: 5px;
@@ -88,3 +112,4 @@ body {
 .equals:hover {
     background: #52469f;
 }
+
