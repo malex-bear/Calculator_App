@@ -73,10 +73,7 @@ function calculateResult() {
 }
 
 function updateDisplay(value) {
-    const displayElement = document.getElementById('display');
-    if (displayElement) {
-        displayElement.textContent = value;
-    }
+    document.getElementById('display').innerText = value;
 }
 
 
