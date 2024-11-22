@@ -8,35 +8,72 @@ body {
     background-color: #2E294E;
 }
 
-.toolclick{
-    position: absolute; 
-    top: 50%; 
-    left: 0; /* Stick to the left side */
-    transform: translateY(-50%); /* Center the div vertically */
-    width: 30px;
-    height: 100vh;
-    border-radius: 5px;
-    background-color: #F9F2F1; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.tools {
+    position: absolute; /* Positions Settings button in the corner*/
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
 }
 
-
-.toolclick > .top-symbol {
-    position: absolute; /* Place it at the top of the div */
-    top: 0; 
-    left: 50%; /* Move it to the center of the div */
-    transform: translateX(-50%); 
-    font-size: 20px; 
-    font-weight: bold; 
-    color:#2E294E;
+#options {
+    background-color: #F9F2F1;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
     cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; 
 }
+
+#options:hover {
+    background-color: #6a6490;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 10px); /* Positions the bar next to the Settings button */
+    background-color: #F9F2F1;
+    padding: 5px;
+    display: flex;
+    gap: 10px; 
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu.visible {
+    visibility: visible; 
+    opacity: 1; 
+}
+
+.theme-btn {
+    background: #2E294E;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.theme-btn:hover {
+    background: #52469f;
+}
+
 
 .calculator {
     background: #F9F2F1;
-    padding: 60px;
+    padding: 45px;
     border-radius: 20px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.2);
     position: relative; /* Position the clouds relative to this container */
     overflow: hidden; /* Ensure clouds don't go beyond the calculator's borders */
     z-index: 1;
@@ -79,7 +116,7 @@ body {
     color: #A5B5BF;
     font-size: 2rem;
     text-align: right;
-    padding: 10px;
+    padding: 16px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -95,7 +132,7 @@ body {
     border: none;
     border-radius: 80px;
     font-size: 1.2rem;
-    padding: 15px;
+    padding: 20px;
     cursor: pointer;
     transition: 0.3s;
 }

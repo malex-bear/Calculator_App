@@ -72,10 +72,27 @@ function calculateResult() {
     }
 }
 
-function updateDisplay(value) {
-    document.getElementById('display').innerText = value;
-}
+const settingsBtn = document.getElementById('options');
+const toolbar = document.querySelector('.menu');
+const themeButtons = document.querySelectorAll('.theme-btn');
 
-function redirect(){
+// Alternar visibilidade da barra
+settingsBtn.addEventListener('click', () => {
+    toolbar.classList.toggle('visible');
+});
 
-}
+// Aplicar tema ao clicar nos botões
+themeButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const theme = e.target.dataset.theme;
+        const calculator = document.querySelector('.calculator');
+        calculator.className = 'calculator'; // Reset classes
+        if (theme === 'Sunset Breeze') {
+            calculator.classList.add('sunset-Breeze');
+        } else if (theme === 'Moonlight') {
+            calculator.classList.add('moonlight');
+        } else if (theme === 'Radiant Joy') {
+            calculator.classList.add('radiant-joy');
+        }
+    });
+});
