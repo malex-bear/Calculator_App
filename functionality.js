@@ -72,6 +72,14 @@ function calculateResult() {
     }
 }
 
+function updateDisplay(value) {
+    const displayElement = document.getElementById('display');
+    if (displayElement) {
+        displayElement.textContent = value;
+    }
+}
+
+
 const settingsBtn = document.getElementById('options');
 const toolbar = document.querySelector('.menu');
 const themeButtons = document.querySelectorAll('.theme-btn');
