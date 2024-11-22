@@ -150,3 +150,102 @@ body {
     background: #52469f;
 }
 
+body.sunset{
+    background-color: #b7384b;
+}
+
+
+body.sunset #options {
+    background-color: #F9F2F1;
+}
+
+body.sunset #options:hover {
+    background-color: #eb9d6d;
+}
+
+body.sunset .theme-btn {
+    background-color: #eb9d6d;
+}
+
+body.sunset .theme-btn:hover {
+    background: #d5773c;
+}
+
+body.sunset .calculator::before {
+    background: #c9253d;
+}
+
+body.sunset .calculator::after {
+    background: #d76533;
+}
+
+body.sunset .display {
+    color: #b7384b;
+}
+
+body.sunset .btn {
+    background: #dfcece;
+}
+
+body.sunset .btn:hover {
+    background: #ad9494;
+}
+
+body.sunset .equals {
+    background: #96172a;
+}
+
+body.sunset .equals:hover {
+    background: #e1233f;
+}
+
+body.radiant {
+    background-image: url(https://www.nikkisplate.com/wp-content/uploads/2022/09/Preppy-Wallpaper-Aesthetic-Designs-18.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.radiant #options:hover {
+    background-color: #f1c5aa;
+}
+
+body.radiant .theme-btn {
+    background-color: #eb9d6d;
+}
+
+body.radiant .theme-btn:hover{
+    background-color: #df793a;
+}
+
+body.radiant .calculator::before {
+    background: #1e7e0f;
+}
+
+body.radiant .calculator::after {
+    background: #a3cb6a;
+}
+
+body.radiant .display {
+    color: #cd5e0f;
+}
+
+body.radiant .btn {
+    background: #d1e9cb;
+}
+
+body.radiant .btn:hover {
+    background: #b4c7af;
+}
+
+body.radiant .equals {
+    background: #d5a73c;
+}
+
+body.radiant .equals:hover {
+    background: #f6d68b;
+}
+
+
+
+

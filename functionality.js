@@ -81,18 +81,22 @@ settingsBtn.addEventListener('click', () => {
     toolbar.classList.toggle('visible');
 });
 
-// Aplicar tema ao clicar nos botões
-themeButtons.forEach(button => {
+// Seleciona todos os botões de tema
+document.querySelectorAll('.theme-btn').forEach(button => {
     button.addEventListener('click', (e) => {
-        const theme = e.target.dataset.theme;
-        const calculator = document.querySelector('.calculator');
-        calculator.className = 'calculator'; // Reset classes
-        if (theme === 'Sunset Breeze') {
-            calculator.classList.add('sunset-Breeze');
-        } else if (theme === 'Moonlight') {
-            calculator.classList.add('moonlight');
-        } else if (theme === 'Radiant Joy') {
-            calculator.classList.add('radiant-joy');
+        const theme = e.target.dataset.theme; // Obtemos o tema do atributo data-theme
+        const body = document.body;
+
+        // Remove quaisquer classes de tema existentes no body
+        body.className = 'moonlight'; 
+
+        // Adiciona a classe correspondente ao tema escolhido
+        if (theme === 'sunset') {
+            body.classList.add('sunset');
+        } else if (theme === 'moonlight') {
+            body.classList.add('moonlight');
+        } else if (theme === 'radiant') {
+            body.classList.add('radiant');
         }
     });
 });
