@@ -247,5 +247,81 @@ body.radiant .equals:hover {
 }
 
 
+/* General styles remain as is, but these are the new additions */
+
+@media (max-width: 768px) {
+    /* Make the body layout vertical for smaller screens */
+    body {
+        flex-direction: flex;
+        padding: 10px;
+    }
+
+    /* Adjust the calculator's size for phones */
+    .calculator {
+        width: 40%; /* Makes the calculator stretch to fit */
+        padding: 50px;
+    }
+
+    .display {
+        width: 90%; /* Stretch the display */
+        font-size: 1.5rem; /* Reduce font size for smaller displays */
+        height: auto;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 1fr); /* Buttons stay in 4 columns */
+        gap: 8px; /* Reduce gap slightly */
+    }
+
+    .btn {
+        padding: 15px; /* Reduce button size for smaller screens */
+        font-size: 1rem; /* Smaller font for buttons */
+    }
+
+    /* Settings button and menu adjustments */
+    .tools {
+        top: 10px;
+        left: 10px;
+        flex-direction: column;
+        align-items: flex-start; /* Stack the settings button and menu */
+    }
+
+    #options {
+        font-size: 1rem; /* Slightly smaller for mobile */
+        padding: 8px;
+    }
+
+    .menu {
+        position: static; /* Let it flow naturally on mobile */
+        margin-top: 10px; /* Add space between menu and settings button */
+        width: 100%; /* Fit the screen width */
+        max-width: 100%; /* Remove the 350px max-width */
+    }
+
+    .theme-btn {
+        padding: 8px; /* Reduce padding on smaller screens */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .display {
+        font-size: 1.9rem; /* Smaller text for tiny displays */
+        padding: 40px;
+    }
+
+    .btn {
+        padding: 30px; /* Compact buttons */
+        font-size: 0.95rem;
+    }
+
+    .calculator {
+        width: 90%;
+        height: 60%;
+        padding: 40px;
+        
+    }
+}
 
 
