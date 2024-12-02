@@ -258,7 +258,8 @@ body.radiant .equals:hover {
 
     /* Adjust the calculator's size for phones */
     .calculator {
-        width: 40%; /* Makes the calculator stretch to fit */
+        width: 50%; /* Makes the calculator stretch to fit */
+        height: 57%;
         padding: 50px;
     }
 
@@ -274,8 +275,9 @@ body.radiant .equals:hover {
     }
 
     .btn {
-        padding: 15px; /* Reduce button size for smaller screens */
-        font-size: 1rem; /* Smaller font for buttons */
+        padding: 25px; /* Reduce button size for smaller screens */
+        font-size: 1.2rem; /* Smaller font for buttons */
+        border-radius: 100%;
     }
 
     /* Settings button and menu adjustments */
@@ -313,8 +315,9 @@ body.radiant .equals:hover {
     }
 
     .btn {
-        padding: 30px; /* Compact buttons */
+        padding: 23px; /* Compact buttons */
         font-size: 0.9rem;
+        border-radius: 100%;
     }
 
     .calculator {
@@ -334,7 +337,7 @@ body.radiant .equals:hover {
     }
 
     .btn {
-        padding: 30px; /* Compact buttons */
+        padding: 25px; /* Compact buttons */
         font-size: 0.95rem;
     }
 
@@ -355,13 +358,13 @@ body.radiant .equals:hover {
     }
 
     .btn {
-        padding: 17px; /* Compact buttons */
+        padding: 12px; /* Compact buttons */
         font-size: 0.9rem;
     }
 
     .calculator {
         width: 60%;
-        height: 60%;
+        height: 65%;
         padding: 40px;
         
     }
