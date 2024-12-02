@@ -304,6 +304,28 @@ body.radiant .equals:hover {
     }
 }
 
+
+@media (max-width: 580px) {
+    /* Further adjustments for very small screens */
+    .display {
+        font-size: 1.9rem; /* Smaller text for tiny displays */
+        padding: 40px;
+    }
+
+    .btn {
+        padding: 30px; /* Compact buttons */
+        font-size: 0.9rem;
+    }
+
+    .calculator {
+        width: 60%;
+        height: 60%;
+        padding: 40px;
+        
+    }
+}
+
+
 @media (max-width: 480px) {
     /* Further adjustments for very small screens */
     .display {
@@ -318,6 +340,27 @@ body.radiant .equals:hover {
 
     .calculator {
         width: 90%;
+        height: 60%;
+        padding: 40px;
+        
+    }
+}
+
+@media (max-width: 380px) {
+    /* Further adjustments for very small screens */
+
+    .display {
+        font-size: 1.9rem; /* Smaller text for tiny displays */
+        padding: 40px;
+    }
+
+    .btn {
+        padding: 17px; /* Compact buttons */
+        font-size: 0.9rem;
+    }
+
+    .calculator {
+        width: 60%;
         height: 60%;
         padding: 40px;
         
