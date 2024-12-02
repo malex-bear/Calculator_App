@@ -346,7 +346,7 @@ body.radiant .equals:hover {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     /* Further adjustments for very small screens */
 
     .display {
