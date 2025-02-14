@@ -73,7 +73,23 @@ function calculateResult() {
 }
 
 function updateDisplay(value) {
-    document.getElementById('display').innerText = value;
+    const display = document.getElementById('display');
+    display.innerText = value;
+
+    // Ajustar o tamanho da fonte com base no comprimento do texto
+    const maxLength = 15; // Comprimento máximo antes de diminuir o texto
+    const minFontSize = 18; // Tamanho mínimo da fonte
+    const maxFontSize = 35; // Tamanho máximo da fonte
+
+    // Determinar o tamanho da fonte com base no comprimento do texto
+    let fontSize = maxFontSize;
+
+    if (value.length > maxLength) {
+        const scale = Math.max(minFontSize, maxFontSize - (value.length - maxLength) * 2);
+        fontSize = scale;
+    }
+
+    display.style.fontSize = `${fontSize}px`;
 }
 
 
@@ -105,3 +121,23 @@ document.querySelectorAll('.theme-btn').forEach(button => {
         }
     });
 });
+
+document.addEventListener('keydown', (event) => {
+    const key = event.key;
+
+    event.preventDefault();
+
+    if (key >= '0' && key <= '9') {
+        appendNumber(key);
+    } else if (key === 'Backspace') {
+        deleteLast();
+    } else if (key === 'Enter') {
+        calculateResult();
+    } else if (key === '+' || key === '-' || key === '*' || key === '/' || key === '^') {
+        appendOperator(key === '*' ? '×' : key === '/' ? '÷' : key);
+    } else if (key === '(' || key === ')') {
+        addParenthesis(key);
+    }
+});
+
+

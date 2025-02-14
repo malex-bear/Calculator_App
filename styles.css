@@ -246,6 +246,46 @@ body.radiant .equals:hover {
     background: #f6d68b;
 }
 
+.scientific-calculator {
+    display: none;  /* Inicialmente oculta */
+    background: #F9F2F1;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.scientific-calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.scientific-calculator .btn {
+    background: #ddd;
+    border: none;
+    border-radius: 80px;
+    font-size: 1.2rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scientific-calculator .btn:hover {
+    background: #bbb;
+}
+
+.scientific-calculator .equals {
+    background: #2E294E;
+    color: #fff;
+}
+
+.scientific-calculator .equals:hover {
+    background: #52469f;
+}
+
 
 /* General styles remain as is, but these are the new additions */
 
