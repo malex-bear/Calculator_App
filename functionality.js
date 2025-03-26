@@ -137,6 +137,12 @@ document.addEventListener('keydown', (event) => {
         appendOperator(key === '*' ? '×' : key === '/' ? '÷' : key);
     } else if (key === '(' || key === ')') {
         addParenthesis(key);
+    } else if (key === '.') {
+        // Verifica se já existe um ponto decimal no número atual
+        const lastNumber = currentDisplay.split(/[\s+\-×÷^]/).pop(); // Pega o último número antes de um operador
+        if (!lastNumber.includes('.')) {
+            appendNumber('.');
+        }
     }
 });
 
