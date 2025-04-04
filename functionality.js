@@ -63,8 +63,13 @@ function calculateResult() {
             .replace(/×/g, '*')   // Replace multiplication
             .replace(/÷/g, '/');  // Replace division
 
-        currentDisplay = eval(sanitizedExpression).toString();
-        resetDisplay = true; // Set reset flag to allow new input
+        let result = eval(sanitizedExpression);
+
+        // Arredonda para 10 casas decimais para evitar erros de ponto flutuante
+        result = Math.round((result + Number.EPSILON) * 1e10) / 1e10;
+
+        currentDisplay = result.toString();
+        resetDisplay = true;
         updateDisplay(currentDisplay);
     } catch (error) {
         updateDisplay('error'); 
