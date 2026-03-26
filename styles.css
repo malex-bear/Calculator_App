@@ -246,6 +246,15 @@ body.radiant .equals:hover {
     background: #f6d68b;
 }
 
+/* Footer color adjustments when Radiant Joy theme is active */
+body.radiant footer {
+    color: #1b3a12;
+}
+
+body.radiant footer a {
+    color: #1b3a12;
+}
+
 .scientific-calculator {
     display: none;  /* Inicialmente oculta */
     background: #F9F2F1;
@@ -284,6 +293,26 @@ body.radiant .equals:hover {
 
 .scientific-calculator .equals:hover {
     background: #52469f;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #F9F2F1;
+    font-size: 1.2rem;
+    font-style: normal;
+}
+
+footer a {
+    color: #F9F2F1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 
